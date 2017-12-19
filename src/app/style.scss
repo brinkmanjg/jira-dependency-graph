@@ -1,0 +1,80 @@
+body {
+   font-family: 'Roboto', sans-serif;
+ }
+
+ .engTask,
+ .story,
+ .apiTest {
+    i:before {
+       margin-right: 5px;
+    }
+ }
+
+ .engTask i:before {
+    content: "\f10c";
+    font-family: FontAwesome;
+    font-style: normal;
+ }
+
+ .story i:before {
+    margin-right: 5px;
+    content: "\f097";
+    font-family: FontAwesome;
+    font-style: normal;
+ }
+
+ .apiTest i:before {
+    content: "\f29c";
+    font-family: FontAwesome;
+    font-style: normal;
+ }
+
+ .title {
+   font-weight: bold;
+   font-size: 12px;
+   margin-bottom: 3px;
+   display: flex;
+   align-items: center;
+
+   span {
+      padding-left: 6px;
+      padding-right: 12px;
+   }
+ }
+
+ .desc {
+   font-size: 12px;
+ }
+
+ .done {
+    rect {
+       stroke: #333;
+       fill: #8EC75F;
+    }
+ }
+
+ .progress {
+    rect {
+       stroke: #333;
+       fill: #FEDA67;
+    }
+ }
+
+ .todo {
+    rect {
+       stroke: #333;
+       fill: #aaa;
+    }
+ }
+
+ .edgePath .path {
+   stroke: #333;
+ }
+
+ .arrowheadPath {
+   fill: #333;
+ }
+
+.errorText {
+   color: #c42219;
+}
