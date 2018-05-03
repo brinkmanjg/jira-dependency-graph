@@ -9,7 +9,7 @@ app.options('*', cors());
 app.get('/api/getIssues', async (req, res) => {
    const epic = req.query.epic
    if (!epic) { return res.status(400).end() }
-   const client = await JiraClient('https://sharpts.atlassian.net', 'USERNAME', '"PASSWORD"')
+   const client = await JiraClient('https://ACCOUNT.atlassian.net', 'USERNAME', '"PASSWORD"')
    const searchResults = await client.searchAll(`"Epic Link" = ${epic}`)
    const issues = searchResults.map(issue => ({
       issueKey: issue.key,
